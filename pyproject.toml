@@ -57,6 +57,7 @@ documentation = "https://django-pgmigrate.readthedocs.io"
 [tool.poetry.dependencies]
 python = ">=3.7.0,<4"
 django = ">=2"
+django-pglock = "<2"
 importlib_metadata = { version = ">=4", python = "~3.7" }
 
 [tool.poetry.dev-dependencies]
@@ -79,6 +80,7 @@ pytest = "7.0.0"
 pytest-cov = "3.0.0"
 pytest-dotenv = "0.5.2"
 pytest-django = "4.5.2"
+pytest-reraise = "2.1.2"
 requests = "2.25.1"
 Sphinx = "4.4.0"
 sphinx-rtd-theme = "1.0.0"

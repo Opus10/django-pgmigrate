@@ -1,3 +1,4 @@
+import datetime as dt
 import os
 
 import dj_database_url
@@ -6,6 +7,10 @@ import dj_database_url
 SECRET_KEY = "django-pgmigrate"
 # Install the tests as an app so that we can make test models
 INSTALLED_APPS = [
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "pgactivity",
+    "pglock",
     "pgmigrate",
 ]
 
