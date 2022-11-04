@@ -57,7 +57,7 @@ documentation = "https://django-pgmigrate.readthedocs.io"
 [tool.poetry.dependencies]
 python = ">=3.7.0,<4"
 django = ">=2"
-django-pglock = "<2"
+django-pglock = ">=1.1.0,<2"
 importlib_metadata = { version = ">=4", python = "~3.7" }
 
 [tool.poetry.dev-dependencies]

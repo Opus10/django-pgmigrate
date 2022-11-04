@@ -222,7 +222,7 @@ importlib_metadata = {version = ">=4", markers = "python_version >= \"3.7\" and 
 
 [[package]]
 name = "django-pglock"
-version = "1.0.0"
+version = "1.1.0"
 description = "Postgres locking routines and lock table access."
 category = "main"
 optional = false
@@ -1188,7 +1188,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=4.6)", "pytest-black (
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7.0,<4"
-content-hash = "0153259e9e244320fdfec29905facb751e336c47b175117ec052e6da78064de1"
+content-hash = "dc68242189455f3c8945982d857a10f431386889f225fff0dc23aa78ec88683f"
 
 [metadata.files]
 alabaster = [
@@ -1336,8 +1336,8 @@ django-pgactivity = [
     {file = "django_pgactivity-1.1.1-py3-none-any.whl", hash = "sha256:296e643e1a012ef77cf95418e472eb47fda6d30a85b4f337b0d4fdaae3ca72d6"},
 ]
 django-pglock = [
-    {file = "django-pglock-1.0.0.tar.gz", hash = "sha256:6a260b96724419245ed309f5a5019b9df1cf06479795e8437fd92595fc8eeee7"},
-    {file = "django_pglock-1.0.0-py3-none-any.whl", hash = "sha256:0f159ad5af7b8d3e3c1008dab27cb10f612a58e6cdf17345628f86a041678f17"},
+    {file = "django-pglock-1.1.0.tar.gz", hash = "sha256:fcb9b5591efaa1cef40e276b32aa52916359004ea9184fc61214923d4310f47e"},
+    {file = "django_pglock-1.1.0-py3-none-any.whl", hash = "sha256:1059083259825f38b90e934d9c0f3be1eaa4de6fdff555c643c319f122c99bd3"},
 ]
 docutils = [
     {file = "docutils-0.17.1-py2.py3-none-any.whl", hash = "sha256:cf316c8370a737a022b72b56874f6602acf974a37a9fba42ec2876387549fc61"},
