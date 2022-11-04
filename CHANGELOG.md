@@ -1,4 +1,8 @@
 # Changelog
+## 1.0.1 (2022-11-03)
+### Trivial
+  - Bump the django-pglock requirement for Postgres<14 and support non-Postgres databases. [Wesley Kendall, 7fbd2c7]
+
 ## 1.0.0 (2022-10-25)
 ### Api-Break
   - V1 of ``django-pgmigrate`` [Wesley Kendall, 304246d]
