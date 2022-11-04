@@ -3,6 +3,7 @@ import inspect
 import sys
 
 from django.core.management.commands.migrate import Command as MigrateCommand
+from django.db import connections
 from django.db.utils import OperationalError
 import pgactivity
 import pglock
@@ -13,6 +14,12 @@ from pgmigrate import action, config
 
 class Command(MigrateCommand):
     def handle(self, *args, **options):
+        if (
+            options["database"] not in connections
+            or connections[options["database"]].vendor != "postgresql"
+        ):  # pragma: no cover
+            return super().handle(*args, **options)
+
         if options["verbosity"]:
             self.stdout.write(
                 self.style.MIGRATE_HEADING("Postgres process ID: ") + str(pgactivity.pid())
