@@ -2,12 +2,19 @@ import functools
 import inspect
 import sys
 
+from django.core.exceptions import ImproperlyConfigured
 from django.core.management.commands.migrate import Command as MigrateCommand
 from django.db import connections
 from django.db.utils import OperationalError
 import pgactivity
 import pglock
-import psycopg2.errors
+
+try:
+    import psycopg.errors as psycopg_errors
+except ImportError:
+    import psycopg2.errors as psycopg_errors
+except ImportError:  # pragma: no cover
+    raise ImproperlyConfigured("Error loading psycopg2 or psycopg module")
 
 from pgmigrate import action, config
 
@@ -48,7 +55,7 @@ class Command(MigrateCommand):
             with pglock.prioritize(**prioritize_kwargs):
                 return super().handle(*args, **options)
         except OperationalError as exc:
-            if exc.__cause__.__class__ == psycopg2.errors.LockNotAvailable:
+            if exc.__cause__.__class__ == psycopg_errors.LockNotAvailable:
                 if self.verbosity:  # pragma: no branch
                     self.stdout.write(self.style.ERROR("\nLock timeout expired. Aborting..."))
 
