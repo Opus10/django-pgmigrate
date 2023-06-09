@@ -1,5 +1,11 @@
 # Changelog
-## 1.0.1 (2022-11-03)
+## 1.1.0 (2023-06-08)
+### Feature
+  - Added Python 3.11, Django 4.2, and Psycopg 3 support [Wesley Kendall, 2f12991]
+
+    Adds Python 3.11, Django 4.2, and Psycopg 3 support along with tests for multiple Postgres versions. Drops support for Django 2.2.
+
+## 1.0.1 (2022-11-04)
 ### Trivial
   - Bump the django-pglock requirement for Postgres<14 and support non-Postgres databases. [Wesley Kendall, 7fbd2c7]
 
