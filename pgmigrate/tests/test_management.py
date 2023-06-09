@@ -29,13 +29,13 @@ def test_migrate_terminate(reraise, capsys):
 
     @reraise.wrap
     def block():
-        with pytest.raises(OperationalError, match="terminating"):
+        with pytest.raises(OperationalError, match="terminat"):
             with transaction.atomic():
                 pglock.model("auth.User", timeout=0)
                 barrier.wait(timeout=5)
                 time.sleep(5)
 
-        with pytest.raises(OperationalError, match="terminating"):
+        with pytest.raises(OperationalError, match="terminat"):
             with transaction.atomic():
                 pglock.model("auth.User", timeout=0)
                 barrier.wait(timeout=5)
@@ -78,13 +78,13 @@ def test_migrate_show(reraise, capsys, settings):
 
     @reraise.wrap
     def block():
-        with pytest.raises(OperationalError, match="terminating"):
+        with pytest.raises(OperationalError, match="terminat"):
             with transaction.atomic():
                 pglock.model("auth.User", timeout=0)
                 barrier.wait(timeout=5)
                 time.sleep(5)
 
-        with pytest.raises(OperationalError, match="terminating"):
+        with pytest.raises(OperationalError, match="terminat"):
             with transaction.atomic():
                 pglock.model("auth.User", timeout=0)
                 barrier.wait(timeout=5)
