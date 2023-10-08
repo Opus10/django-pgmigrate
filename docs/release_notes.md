@@ -1,1 +1,40 @@
 # Changelog
+
+## 1.2.0 (2023-10-08)
+
+### Feature
+
+  - Add Python 3.12 support and use Mkdocs for documentation [Wesley Kendall, d671a60]
+
+    Python 3.12 and Postgres 16 are supported now, along with having revamped docs using Mkdocs and the Material theme.
+
+    Python 3.7 support was dropped.
+
+## 1.1.0 (2023-06-09)
+
+### Feature
+
+  - Added Python 3.11, Django 4.2, and Psycopg 3 support [Wesley Kendall, 2f12991]
+
+    Adds Python 3.11, Django 4.2, and Psycopg 3 support along with tests for multiple Postgres versions. Drops support for Django 2.2.
+
+## 1.0.1 (2022-11-04)
+
+### Trivial
+
+  - Bump the django-pglock requirement for Postgres<14 and support non-Postgres databases. [Wesley Kendall, 7fbd2c7]
+
+## 1.0.0 (2022-10-25)
+
+### Api-Break
+
+  - V1 of ``django-pgmigrate`` [Wesley Kendall, 304246d]
+
+    ``django-pgmigrate`` helps you avoid costly downtime with Postgres migrations
+    and provides the following features to alleviate problematic locking
+    scenarios when running migrations:
+
+    * Detect blocking queries and terminate them automatically.
+    * Print blocking queries so that you can inspect
+      and terminate them manually.
+    * Set the lock timeout so that migrations are terminated if they block too long.
