@@ -1,7 +1,7 @@
 _extensions:
 - jinja2_time.TimeExtension
 _template: git@github.com:Opus10/public-django-app-template.git
-_version: e83438cb63f6822c31818a24ee02bb1179b18f05
+_version: 8dca84b06c954a94664bb5d03db792350525c35f
 module_name: pgmigrate
 repo_name: django-pgmigrate
 short_description: Less downtime during migrations.

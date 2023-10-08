@@ -2,11 +2,11 @@ import datetime as dt
 import threading
 import time
 
+import pglock
+import pytest
 from django.core.management import call_command
 from django.db import transaction
 from django.db.utils import OperationalError
-import pglock
-import pytest
 
 import pgmigrate
 

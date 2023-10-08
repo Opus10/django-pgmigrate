@@ -6,10 +6,10 @@ class BlockingAction(pglock.PrioritizeSideEffect):
     The base class for writing custom actions for managing blocking
     migration activitiy.
 
-    Implement the ``worker`` method, which is supplied:
+    Implement the `worker` method, which is supplied:
 
     1. The migrate management command instance.
-    2. The ``pglock.models.BlockedPGLock`` queryset
+    2. The `pglock.models.BlockedPGLock` queryset
        of all blocked migration operations.
     """
 
@@ -42,7 +42,7 @@ class Terminate(BlockingAction):
 class Show(BlockingAction):
     """
     Show all blocking locks when running migrations.
-    The process IDs are shown, which can be used in calls to the ``pgactivity``
+    The process IDs are shown, which can be used in calls to the `pgactivity`
     management command.
     """
 
