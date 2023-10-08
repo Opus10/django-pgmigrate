@@ -3,7 +3,6 @@ from django.core import management
 from pgmigrate import config
 from pgmigrate.management.commands.pgmigrate import Command
 
-
 _real_load_command_class = management.load_command_class
 
 

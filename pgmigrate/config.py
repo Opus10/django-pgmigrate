@@ -15,10 +15,10 @@ def blocking_action():
     Configure the action that should be taken when blocking locks
     are discovered during migrations. Must be:
 
-    * ``pgmigrate.Terminate``: To terminate the blocking locks
-    * ``pgmigrate.Show``: To show the process IDs of the blocking locks
-    * A custom action that inherits ``pgmigrate.BlockingAction``
-      and implements the ``worker`` method.
+    * `pgmigrate.Terminate`: To terminate the blocking locks
+    * `pgmigrate.Show`: To show the process IDs of the blocking locks
+    * A custom action that inherits `pgmigrate.BlockingAction`
+      and implements the `worker` method.
     """
     return getattr(settings, "PGMIGRATE_BLOCKING_ACTION", action.Terminate)
 

@@ -2,19 +2,19 @@ import functools
 import inspect
 import sys
 
+import pgactivity
+import pglock
 from django.core.exceptions import ImproperlyConfigured
 from django.core.management.commands.migrate import Command as MigrateCommand
 from django.db import connections
 from django.db.utils import OperationalError
-import pgactivity
-import pglock
 
 try:
     import psycopg.errors as psycopg_errors
 except ImportError:
     import psycopg2.errors as psycopg_errors
-except ImportError:  # pragma: no cover
-    raise ImproperlyConfigured("Error loading psycopg2 or psycopg module")
+except Exception as exc:  # pragma: no cover
+    raise ImproperlyConfigured("Error loading psycopg2 or psycopg module") from exc
 
 from pgmigrate import action, config
 
