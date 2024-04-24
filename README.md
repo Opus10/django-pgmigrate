@@ -53,7 +53,7 @@ You can configure `django-pgmigrate` to show blocked queries instead of automati
 
 For information on setting up django-pgmigrate for development and contributing changes, view [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Primary Authors
+## Creators
 
 - [Wes Kendall](https://github.com/wesleykendall)
 - [Paul Gilmartin](https://github.com/PaulGilmartin)
