@@ -4,4 +4,4 @@ Welcome to the docs for `django-pgmigrate`! It doesn't appear that the author ha
 
 ## Compatibility
 
-`django-pgmigrate` is compatible with Python 3.8 - 3.12, Django 3.2 - 5.0, Psycopg 2 - 3, and Postgres 12 - 16.
+`django-pgmigrate` is compatible with Python 3.8 - 3.12, Django 4.2 - 5.1, Psycopg 2 - 3, and Postgres 13 - 16.
