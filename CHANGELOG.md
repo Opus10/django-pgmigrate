@@ -1,14 +1,20 @@
 # Changelog
 
+## 1.4.0 (2024-08-24)
+
+#### Changes
+
+  - Django 5.1 compatibilty, and Dropped Django 3.2 / Postgres 12 support by [@wesleykendall](https://github.com/wesleykendall) in [#10](https://github.com/Opus10/django-pgmigrate/pull/10).
+
 ## 1.3.1 (2024-04-06)
 
-### Trivial
+#### Trivial
 
   - Fix ReadTheDocs builds. [Wesley Kendall, e8807bc]
 
 ## 1.3.0 (2023-11-26)
 
-### Feature
+#### Feature
 
   - Django 5.0 compatibility [Wesley Kendall, c884e46]
 
@@ -16,13 +22,13 @@
 
 ## 1.2.1 (2023-10-09)
 
-### Trivial
+#### Trivial
 
   - Added Opus10 branding to docs [Wesley Kendall, 7aa3296]
 
 ## 1.2.0 (2023-10-08)
 
-### Feature
+#### Feature
 
   - Add Python 3.12 support and use Mkdocs for documentation [Wesley Kendall, d671a60]
 
@@ -32,7 +38,7 @@
 
 ## 1.1.0 (2023-06-09)
 
-### Feature
+#### Feature
 
   - Added Python 3.11, Django 4.2, and Psycopg 3 support [Wesley Kendall, 2f12991]
 
@@ -40,13 +46,13 @@
 
 ## 1.0.1 (2022-11-04)
 
-### Trivial
+#### Trivial
 
   - Bump the django-pglock requirement for Postgres<14 and support non-Postgres databases. [Wesley Kendall, 7fbd2c7]
 
 ## 1.0.0 (2022-10-25)
 
-### Api-Break
+#### Api-Break
 
   - V1 of ``django-pgmigrate`` [Wesley Kendall, 304246d]
 
